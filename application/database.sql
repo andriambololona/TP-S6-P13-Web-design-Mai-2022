@@ -18,33 +18,23 @@ insert into  admin(pass,image,nom,prenom,birth,biographie,adresse) values(sha1('
 insert into  admin(pass,image,nom,prenom,birth,biographie,adresse) values(sha1('admin4'),'#','andry','andria','1996-11-06','environnementaliste','rue 500 Paris');
 
 
-create table type_contenu(
-    id int primary key not null,
-    type varchar(50)
-)ENGINE=InnoDb;
-
-insert into type_Contenu(id,type) values(1,'cause');
-insert into type_Contenu(id,type) values(2,'solution');
-
 create table contenu_cause(
     id int not null primary key AUTO_INCREMENT,
-    id_type_contenu int not null,
     id_cause int not null,
+    titre text,
     description text not null,
     dates Date,
-    photos varchar(50),
-    Foreign key(id_type_contenu) references type_contenu(id),
+    photos text not null,
     Foreign key(id_cause) references cause(id)
 )ENGINE=InnoDb;
 
 create table contenu_solution(
     id int not null primary key AUTO_INCREMENT,
-    id_type_contenu int not null,
     id_solution int not null,
+    titre text,
     description text not null,
     dates Date,
-    photos varchar(50),
-    Foreign key(id_type_contenu) references type_contenu(id),
+    photos text not null,
     Foreign key(id_solution) references solution(id)
 )ENGINE=InnoDb;
 
@@ -65,11 +55,10 @@ create table solution(
 insert into solution(nom) values('reboisement');
 
 
-insert into contenu_cause(id_type_contenu,description,id_cause,dates,photos) VALUES(1,'la pollution de l''atmostphere cree le changement climatique',2,'2019-05-07','cop/cause/3.jpg');
-insert into contenu_cause(id_type_contenu,description,id_cause,dates,photos) VALUES(1,'l''efet de serre cree le changement climatique',3,'2019-05-07','cop/cause/2.jpg');
-insert into contenu_cause(id_type_contenu,description,id_cause,dates,photos) VALUES(1,'La deforestion cree le changement climatique',1,'2019-05-07','cop/cause/1.jpg');
+
+insert into contenu_cause(titre,description,id_cause,dates,photos) VALUES('la pollution','la pollution de l''atmostphere cree le changement climatique',2,'2019-05-07','cop/cause/3.jpg');
+insert into contenu_cause(titre,description,id_cause,dates,photos) VALUES('L''effet de serre','l''efet de serre cree le changement climatique',3,'2019-05-07','cop/cause/2.jpg');
+insert into contenu_cause(titre,description,id_cause,dates,photos) VALUES('La deforestation','La deforestion cree le changement climatique',1,'2019-05-07','cop/cause/1.jpg');
 
 
-insert into image_contenu_cause(id_contenu_cause,photo) values(1,'cop/cause/3.jpg');
-insert into image_contenu_cause(id_contenu_cause,photo) values(2,'cop/cause/2.jpg');
-insert into image_contenu_cause(id_contenu_cause,photo) values(3,'cop/cause/1.jpg');
+

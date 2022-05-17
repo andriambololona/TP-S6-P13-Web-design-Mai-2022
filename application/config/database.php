@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'mysql-andriambololona.alwaysdata.net',
-	'username' => '268645_salohy',
-	'password' => 'banlieux13',
-	'database' => 'andriambololona_changementclimatique',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'root',
+	'database' => 'changementclimatique',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

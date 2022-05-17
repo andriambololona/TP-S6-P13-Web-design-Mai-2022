@@ -7,7 +7,7 @@
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-<title>AgriSolution </title>
+<title>Index</title>
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -62,11 +62,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<nav class="menu menu--horatio link-effect-8" id="link-effect-8">
 								<ul class="w3layouts_menu__list">
 									<li class="active"><a href="<?php echo site_url('Accueil/index')?>">Accueil</a></li>
-									<li><a href="<?php echo site_url('ControllerPage/indexAbout')?>">A propos</a></li> 
-									<li><a href="<?php echo site_url('ControllerPage/indexServices')?>">Services</a></li>
-									<li><a href="<?php echo site_url('ControllerPage/indexGallery')?>">Gallerie</a></li> 
-									<li><a href="<?php echo site_url('ControllerPage/indexContact')?>">Contacts</a></li>
-									<li><a href="<?php echo site_url('ControllerPage/indexAdmin')?>">Se Connecter</a></li>
+									<li><a href="<?php echo site_url('ControllerPage/indexAbout')?>">Solution</a></li> 
+									<li><a href="<?php echo site_url('ControllerPage/indexAccueilAdmin')?>">Administrateur</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -132,7 +129,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="w3_agile_image">
 				<img src="<?php echo img_loader('1.png') ?>" alt=" " class="img-responsive" />
 			</div>
-			<p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			
 		</div>
 <!---728x90--->
 
@@ -154,10 +151,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- welcome-bottom -->
 	<div id="welcome_bottom" class="welcome-bottom">
 		<div class="col-md-6 wthree_welcome_bottom_left">
-			<h3>we work hard and make our country <span>greenery</span></h3>
+			<h1>le <span>reboisement</span></h1>
 			
-			<p>Nullam pretium euismod orci ac porta. Interdum et malesuada fames ac ante
-				ipsum primis in faucibus. Donec at scelerisque dolor, vel placerat mi.</p>
+			<h3>nous aidera à sauver notre planète </h3>
 			
 			<div class="clearfix"> </div>
 		</div>
@@ -167,8 +163,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<img src="<?php echo img_loader('4.jpg') ?>" alt=" " class="img-responsive" />
 					<figcaption>
 						<h4>Plantation <span>pour le future</span></h4>
-						<p>Nullam in luctus lectus. Mauris lobortis dui mauris, non vestibulum 
-							magna blandit at scelerisque tellus ipsum nec ipsum.</p>
+						
 					</figcaption>			
 				</figure>
 			</div>
@@ -182,11 +177,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- newsletter -->
 	<div class="newsletter">
 		<div class="container">
-			<h3 class="agileits_w3layouts_head agileinfo_head"><span>Subscribe</span> to our newsletter</h3>
+			<h3 class="agileits_w3layouts_head agileinfo_head"><span>Souscription</h3>
 			<div class="w3_agile_image">
 				<img src="<?php echo img_loader('12.png') ?>" alt=" " class="img-responsive">
 			</div>
-			<p class="agile_para agileits_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			
 			<div class="w3ls_news_grids w3ls_newsletter_grids">
 				<form action="#" method="post">
 					<input name="Your Name" placeholder="Your Name" type="text" required="">

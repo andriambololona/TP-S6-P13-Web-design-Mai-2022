@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-<title>Germinate an Agriculture Category Flat Bootstrap Responsive Website Template | Contact Us </title>
+<title>index</title>
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -78,27 +77,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 						<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
-				<div class="agileits_w3layouts_menu">
-					<div class="shy-menu">
-						<a class="shy-menu-hamburger">
-							<span class="layer top"></span>
-							<span class="layer mid"></span>
-							<span class="layer btm"></span>
-						</a>
-						<div class="shy-menu-panel">
-							<nav class="menu menu--horatio link-effect-8" id="link-effect-8">
-								<ul class="w3layouts_menu__list">
-									<li class="active"><a href="<?php echo site_url('Accueil/index')?>">Accueil</a></li>
-									<li><a href="<?php echo site_url('ControllerPage/indexAbout')?>">A  propos</a></li> 
-									<li><a href="<?php echo site_url('ControllerPage/indexServices')?>">Services</a></li>
-									<li><a href="<?php echo site_url('ControllerPage/indexGallery')?>">Gallerie</a></li> 
-									<li class="active"><a href="<?php echo site_url('ControllerPage/indexContact')?>">Contacts</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
+				
 				<div class="clearfix"> </div>
 			</div>
 		</div>
@@ -193,7 +172,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			<div class="w3agile_footer_grids">
 				<div class="col-md-3 agileinfo_footer_grid">
 					<div class="agileits_w3layouts_footer_logo">
-						<h2><a href="index.html"><span>A</span>griSolution<i>Grow healthy products</i></a></h2>
+						<h2><a href="index.html"><span>Le</span>monde<i>changement climatique </i><span>A</span>griSolution<i>Grow healthy products</i></a></h2>
 					</div>
 				</div>
 				<div class="col-md-4 agileinfo_footer_grid">

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ControllerContenu extends CI_Controller {
+class ControllerAdmin extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -21,16 +21,23 @@ class ControllerContenu extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 	}
-	public function select(){
-		$this->load->model('contenu');
-        $id=$this->input->get('id');
-        
-		$data['content']=$this->contenu->selectContenuCause($id);
-        //var_dump($data['content']);
-		$this->load->helper('assets');
-		$this->load->view('contenu',$data);
+	public function login(){
+
+        $this->load->helper('assets');
+		$this->load->model('admin');
+        $id=$this->input->post('id');
+        $pass=$this->input->post('pass');
+		$login=$this->admin->verificationLogin($id,$pass);
+        if($login==true)
+        {
 		
+            $this->load->view('admin');
+        }
+        else{
+		$this->load->view('index');
+        }
 	}
-		
+	
+	
+	
 }
-?>

@@ -74,4 +74,44 @@ class ControllerPage extends CI_Controller {
 		//$data['template'] = 'login.php';
 		$this->load->view('admin',$data);
 	}
+
+	public function indexAccueilAdmin()
+	{
+		$this->load->helper('assets');
+		
+		//$data['caisse'] = $this->session->userdata('caisse');
+		//$data['template'] = 'login.php';
+		$this->load->view('accueilAdmin');
+	}
+
+	public function indexInsertContenuCause()
+	{
+		$this->load->helper('assets');
+		$data['contenu']='from_content_cause.php';
+		$this->load->model('contenu');
+		$data['cause']=$this->contenu->get_Cause();
+		//$data['caisse'] = $this->session->userdata('caisse');
+		//$data['template'] = 'login.php';
+		$this->load->view('admin',$data);
+	}
+	public function indexInsertContenuSolution()
+	{
+		$this->load->helper('assets');
+		$data['contenu']='form_content_solution.php';
+		//$data['caisse'] = $this->session->userdata('caisse');
+		//$data['template'] = 'login.php';
+		$this->load->view('admin',$data);
+	}
+	public function indexListeContenu()
+	{
+		$this->load->helper('assets');
+		$data['contenu']='liste_contenu.php';
+		$this->load->model('contenu');
+		$data['cause']=$this->contenu->get_contenu_cause();
+		$data['solution']=$this->contenu->get_contenu_solution();
+		//$data['caisse'] = $this->session->userdata('caisse');
+		//$data['template'] = 'login.php';
+		$this->load->view('admin',$data);
+	}
+
 }

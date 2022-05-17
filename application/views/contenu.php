@@ -7,7 +7,7 @@
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-<title>Gallery </title>
+<title>Contenu</title>
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -167,11 +167,12 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <div class="list-group">
 <?php foreach($content as $contents){?>
 	
-	<div class="media">
-		<img src="<?php echo img_loader($contents['photos'])?>" class="align-self-center mr-3" alt="..." width='500'>
+	<div class="media" style="color:black;">
+		<img src="<?php echo img_loader($contents['photos'])?>" class="align-self-center mr-3" alt="..." width='400'>
 		<P><?php echo $contents['dates']?></P>
 		<br>
 		<div class="media-body">
+		<h1><?php echo $contents['titre']?></h1>
 			<h4><?php echo $contents['description']?></h4>
 			<h4 class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</h4>
 		</div>
@@ -195,7 +196,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			<div class="w3agile_footer_grids">
 				<div class="col-md-3 agileinfo_footer_grid">
 					<div class="agileits_w3layouts_footer_logo">
-						<h2><a href="index.html"><span>A</span>griSolution<i>Grow healthy products</i></a></h2>
+						<h2><a href="index.html"><span>Le</span>monde<i>Rechauffement climatique </i></h2>
 					</div>
 				</div>
 				<div class="col-md-4 agileinfo_footer_grid">
